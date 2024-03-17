@@ -1,0 +1,54 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $clientes_id
+ * @property string $sector
+ * @property string $email
+ * @property string $phone
+ * @property string $address1
+ * @property string $codigo_postal
+ * @property string $created_at
+ * @property string $updated_at
+ * @property string $deleted_at
+ * @property Cliente $cliente
+ */
+class clientes_sector extends Model
+{
+    static $rules = [
+		'sectores_id' => 'required',
+		'sector_address1' => 'required',
+		'sector_cp' => 'required',
+    ];
+    /**
+     * The table associated with the model.
+     * 
+     * @var string
+     */
+    protected $table = 'clientes_sector';
+
+    /**
+     * The "type" of the auto-incrementing ID.
+     * 
+     * @var string
+     */
+    protected $keyType = 'integer';
+
+    /**
+     * @var array
+     */
+    protected $fillable = ['clientes_id', 'sectores_id', 'email', 'sector_telef', 'sector_address1', 'sector_cp', 
+                            'created_at', 'updated_at', 'deleted_at'];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function cliente()
+    {
+        return $this->belongsTo('App\Cliente', 'clientes_id');
+    }
+}

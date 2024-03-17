@@ -1,0 +1,432 @@
+.img-account-profile {
+  height: 10rem;
+  width: 7rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.size-icon {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+.c-red {
+  color: red !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.c-green {
+  color: green !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.btn-sm-80 {
+  --cz-btn-padding-y: 0.4rem;
+  --cz-btn-padding-x: .80rem;
+  --cz-btn-font-size: 0.8125rem;
+  --cz-btn-border-radius: 0.25rem;
+}
+
+.horizontal-inputs {
+  display: flex;
+  /* Utiliza flexbox para distribuir elementos horizontalmente */
+}
+
+.input-container {
+  margin-right: 10px;
+  /* Añade un margen derecho entre los elementos */
+}
+
+.h-card {
+  height: 500px; 
+}
+
+.toast {
+  z-index: 1000 !important; 
+}
+
+.nota-red{
+  color:forestgreen !important;
+  font-size: 0.9rem;
+}
+
+.comentario-red{
+  color:red !important;
+  font-size: 0.9rem;
+}
+
+.bg-input{
+  background-color:rgb(251, 236, 236) !important;
+}
+
+.icono-grilla {
+  font-size: 15px; 
+}
+
+.btn-sm-70 {
+  --cz-btn-padding-y: 0.1rem;
+  --cz-btn-padding-x: .60rem;
+  --cz-btn-font-size: 0.8125rem;
+  --cz-btn-border-radius: 0.25rem;
+}
+
+.adicionales-modal-width {
+  max-width: 1100px; /* Ajusta el ancho según tus necesidades */
+
+}
+
+/* ----- COLORES ESTADOS -----  */
+
+/* Approved */
+
+.bg-approved.badge-shadow {
+    box-shadow: 0 .5rem 1.125rem -0.275rem #5DED5D;
+}
+.bg-approved {
+    color: #000;
+    --cz-bg-opacity: 1;
+    background-color:#5DED5D !important;
+}
+
+/* Cancelled */
+
+.bg-cancelled.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #FF0000;
+}
+.bg-cancelled {
+  color: #fff;
+  --cz-bg-opacity: 1;
+  background-color:#FF0000 !important;
+}
+
+/* In Review */
+
+.bg-inreview.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #FFAA00;
+}
+.bg-inreview {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#FFAA00 !important;
+}
+
+/* In Packaging */
+
+.bg-inpackaging.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #A9EBFF;
+}
+.bg-inpackaging {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#A9EBFF !important;
+}
+
+/* Delivered */
+
+.bg-delivered.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #00B7FF;
+}
+.bg-delivered {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#00B7FF !important;
+}
+
+/* ----- COLORES ESTADOS INTERNOS -----  */
+
+/* COMPLETED */
+
+.bg-completed.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #5DED5D;
+}
+.bg-completed {
+  --cz-bg-opacity: 1;
+  background-color:#5DED5D !important;
+}
+
+/* CANCELLED (Interno) */
+
+.bg-cancelledinterno.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #FF0000;
+}
+.bg-cancelledinterno {
+  --cz-bg-opacity: 1;
+  background-color:#FF0000 !important;
+}
+
+/* In Canon Flat Print */
+
+.bg-incanonflatprint.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #801289;
+}
+.bg-incanonflatprint {
+  color: #fff;
+  --cz-bg-opacity: 1;
+  background-color:#801289 !important;
+}
+
+/* In Canon Colorado */
+
+.bg-incanoncolorado.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #CA0CC6;
+}
+.bg-incanoncolorado {
+  color: #fff;
+  --cz-bg-opacity: 1;
+  background-color:#CA0CC6 !important;
+}
+
+/* In Epson 60600L */
+
+.bg-inepson60600l.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #ED77ED;
+}
+.bg-inepson60600l {
+  color: #fff;
+  --cz-bg-opacity: 1;
+  background-color:#ED77ED !important;
+}
+
+/* In Mimaki TxF150 */
+
+.bg-inmimakitxf150.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #FAA7FC;
+}
+.bg-inmimakitxf150 {
+  color: #fff;
+  --cz-bg-opacity: 1;
+  background-color:#FAA7FC !important;
+}
+
+/* In lamination */
+
+.bg-inlamination.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #00B7FF;
+}
+.bg-inlamination {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#00B7FF !important;
+}
+
+/* In Preparation */
+
+.bg-inpreparation.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #51D4F2;
+}
+.bg-inpreparation {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#51D4F2 !important;
+}
+
+/* External Supply */
+
+.bg-externalsupply.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #A9EBFF;
+}
+.bg-externalsupply {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#A9EBFF !important;
+}
+
+/* In Flat Cut */
+
+.bg-inflatcut.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #FFD700;
+}
+.bg-inflatcut {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#FFD700 !important;
+}
+
+/* In Plotter Cutting */
+
+.bg-inplottercutting.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem #FFE36E;
+}
+.bg-inplottercutting {
+  color: #000;
+  --cz-bg-opacity: 1;
+  background-color:#FFE36E !important;
+}
+
+/* PARA BORRAR LUEGO */
+
+/* Verde para estados de: Approved, In Shipping */
+
+.bg-verde.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem rgba(66, 214, 151, .9);
+}
+.bg-verde {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-success-rgb), var(--cz-bg-opacity)) !important;
+}
+
+/* Naranja para el estado: In Review */
+
+.bg-naranja.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem rgba(254, 165, 105, .9);
+}
+.bg-naranja {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-warning-rgb), var(--cz-bg-opacity)) !important;
+}
+
+/* Rojo para los estados: Canceled, Refused */
+
+.bg-rojo.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem rgba(254, 105, 106, .9);
+}
+.bg-rojo {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-primary-rgb), var(--cz-bg-opacity)) !important;
+}
+
+/* Azul para los estados: In Print, Packaging */
+
+.bg-azul.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem rgba(105, 179, 254, .9);
+}
+.bg-azul {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-info-rgb), var(--cz-bg-opacity)) !important;
+}
+
+/* Violeta para el estado: Delivered */
+
+.bg-violeta.badge-shadow {
+  box-shadow: 0 .5rem 1.125rem -0.275rem rgba(78, 84, 200, .9);
+}
+
+.bg-violeta {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-accent-rgb), var(--cz-bg-opacity)) !important;
+}
+
+/* Negro para los estados internos: In plotter, In flat cut, In lamination, In preparation, External Supply */
+
+.bg-internal.badge-shadow {
+box-shadow: 0 .5rem 1.125rem -0.275rem rgba(55, 63, 80, .9);
+}
+.bg-internal {
+--cz-bg-opacity: 1;
+background-color: rgba(var(--cz-dark-rgb), var(--cz-bg-opacity)) !important;
+}
+
+.card2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: auto;
+    background: #000;
+}
+.card2 .image2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card2 .image2 img {
+    width: 100%;
+    transition: .5s;
+}
+.card2:hover .image2 img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card2 .details2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #000;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card2:hover .details2 {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card2 .details2 .center {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card2 .details2 .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 25px;
+    font-size: 26px;
+	text-transform: uppercase;
+    
+}
+.card2 .details2 .center h1 span {
+    font-size: 26px;
+    color: #e54452;
+	
+}
+.card2 .details2 .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #fff;
+	font-size: 17px;
+}
+.card2 .details2 .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.card2 .details2 .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.card2 .details2 .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.card2 .details2 .center ul li a:hover {
+    background: #ff3636;
+}
+
+.deshabilitar {
+  pointer-events: none; /* Deshabilita la interacción del cursor */
+  color: gray; /* Cambia el color para indicar que está deshabilitado */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.error-select {
+  border: 1px solid #ff0000; /* Borde rojo */
+  color: #ff0000; /* Texto rojo */
+  background-color: rgba(255, 0, 0, 0.05); /* Fondo rojo con menos opacidad */
+}
+
+.top-25 {
+  top: 25% !important;
+}
+
+.icon-15 {
+  font-size: 1.3rem;
+}
